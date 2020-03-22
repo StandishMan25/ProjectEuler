@@ -24,4 +24,10 @@ func ProblemNumber() {
 # Running
 Once you're ready to execute your code, navigate to `standish.dev/project_euler`, run `go build`, then `go install`. Execute `project_euler` to see your results!
 
-If `project_euler` isn't in the path, you can add it. Naviate again to `standish.dev/project_euler` and execute `export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))`
+If `project_euler` isn't in the path, you can add it. Naviate again to `standish.dev/project_euler` and execute 
+```go
+export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
+```
+
+# References
+[GoLang Modules](https://golang.org/doc/code.html)
