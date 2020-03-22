@@ -1,12 +1,15 @@
 package problems
 
-import (
-	"fmt"
-
-	strings "standish.dev/project_euler/utility"
-)
+import "fmt"
 
 // One returns something
 func One() {
-	fmt.Println(strings.ReverseRunes("This is problem 1!"))
+	sum := 0
+	for i := range [1000]int{} {
+		if i%3 == 0 || i%5 == 0 {
+			sum += i
+		}
+	}
+
+	fmt.Println(sum)
 }
